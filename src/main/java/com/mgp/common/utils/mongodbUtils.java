@@ -1,5 +1,5 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 public class mongodbUtils {
-   
+
 }

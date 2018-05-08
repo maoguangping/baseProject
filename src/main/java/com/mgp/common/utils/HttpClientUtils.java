@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.io.IOException;
 import java.security.KeyManagementException;
@@ -7,7 +7,6 @@ import java.security.cert.CertificateException;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Map;
-
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
@@ -33,11 +32,13 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.yishenxiao.commons.utils.easemob.TokenUtil;
+
 public class HttpClientUtils {
     
    /**
     * @author mgp
-    * @param url  获取数据的url
+    * @param url  获取数据的url get
     * @param paraterMap  获取数据的map参数集合 Map<String,Object>
     * @return  获取的数据 String
     */
@@ -94,7 +95,6 @@ public class HttpClientUtils {
 	        }
 	    }catch (Exception e) {
 	    	response = null;
-	    	System.out.println(e);
 	    	logger.error("http get request error!  url: "+url);
 	    }   
 	    try{
@@ -186,4 +186,26 @@ public class HttpClientUtils {
        sc.init(null, new TrustManager[] { trustManager }, null);  
        return sc;  
    } 
+   
+   
+   public static String httpPostWithJSONEasemob(String url, String params) throws Exception {
+
+       HttpPost httpPost = new HttpPost(url);
+       CloseableHttpClient client = HttpClients.createDefault();
+       String respContent = null;
+       httpPost.setHeader("Authorization", TokenUtil.getAccessToken());
+       JSONObject jsonParam = new JSONObject(params);
+       StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");//解决中文乱码问题    
+       entity.setContentType("application/json");
+       httpPost.setEntity(entity);
+            
+       HttpResponse resp = client.execute(httpPost);
+       if(resp.getStatusLine().getStatusCode() == 200) {
+           HttpEntity he = resp.getEntity();
+           respContent = EntityUtils.toString(he,"UTF-8");
+       }
+       Thread.sleep(1000);
+       return respContent;
+   }
+   
 }

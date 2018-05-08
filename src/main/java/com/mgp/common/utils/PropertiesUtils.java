@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -40,7 +40,15 @@ public class PropertiesUtils {
         	properties.load(inputStream);
         } catch (IOException e) {
             logger.error(e.getMessage());
-        }
+        }finally{
+           if (inputStream!=null) {
+               try {
+            	   inputStream.close();
+			} catch (IOException e) {
+				logger.error("关闭  io流 失败!");
+			}
+           }
+       }
 	       return properties;
     }
 }

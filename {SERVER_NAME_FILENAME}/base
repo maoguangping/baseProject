@@ -1,0 +1,108 @@
+2018-05-08 15:40:01.470 INFO [main][Jdk14Logger.java:87] - Starting BaseItem on WIN-4NVSM29K976 with PID 5732 (C:\mao\gitversion\git\test\yishenxiao\bootbase\target\classes started by Administrator in C:\mao\gitversion\git\test\yishenxiao\bootbase)
+2018-05-08 15:40:01.483 INFO [main][Jdk14Logger.java:87] - The following profiles are active: dev
+2018-05-08 15:40:01.577 INFO [main][Jdk14Logger.java:87] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25641d39: startup date [Tue May 08 15:40:01 CST 2018]; root of context hierarchy
+2018-05-08 15:40:01.731 DEBUG [background-preinit][LoggerFactory.java:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2018-05-08 15:40:01.732 INFO [background-preinit][Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2018-05-08 15:40:01.766 DEBUG [background-preinit][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:02.812 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:02.837 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:02.843 DEBUG [main][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-05-08 15:40:02.844 DEBUG [main][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-05-08 15:40:02.845 DEBUG [main][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy59
+2018-05-08 15:40:02.847 DEBUG [main][ValidationXmlParser.java:99] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-05-08 15:40:02.849 DEBUG [main][ResourceLoaderHelper.java:47] - Trying to load META-INF/validation.xml via user class loader
+2018-05-08 15:40:02.850 DEBUG [main][ResourceLoaderHelper.java:54] - Trying to load META-INF/validation.xml via TCCL
+2018-05-08 15:40:02.850 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-05-08 15:40:02.851 DEBUG [main][ValidationXmlParser.java:106] - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-05-08 15:40:03.086 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:03.088 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:03.088 DEBUG [main][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-05-08 15:40:03.089 DEBUG [main][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-05-08 15:40:03.089 DEBUG [main][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy59
+2018-05-08 15:40:03.089 DEBUG [main][ValidationXmlParser.java:99] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-05-08 15:40:03.090 DEBUG [main][ResourceLoaderHelper.java:47] - Trying to load META-INF/validation.xml via user class loader
+2018-05-08 15:40:03.091 DEBUG [main][ResourceLoaderHelper.java:54] - Trying to load META-INF/validation.xml via TCCL
+2018-05-08 15:40:03.091 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-05-08 15:40:03.091 DEBUG [main][ValidationXmlParser.java:106] - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-05-08 15:40:03.401 INFO [main][Jdk14Logger.java:87] - Tomcat initialized with port(s): 8080 (http)
+2018-05-08 15:40:03.414 INFO [main][DirectJDKLog.java:179] - Starting service [Tomcat]
+2018-05-08 15:40:03.416 INFO [main][DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-05-08 15:40:03.593 INFO [localhost-startStop-1][DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2018-05-08 15:40:03.594 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Root WebApplicationContext: initialization completed in 2023 ms
+2018-05-08 15:40:03.823 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-08 15:40:03.831 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-08 15:40:03.832 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-08 15:40:03.832 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-08 15:40:03.832 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-08 15:40:04.116 DEBUG [main][LogFactory.java:135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-05-08 15:40:04.234 DEBUG [main][SqlSessionFactoryBean.java:496] - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2018-05-08 15:40:04.319 DEBUG [main][SqlSessionFactoryBean.java:528] - Parsed mapper file: 'file [C:\mao\gitversion\git\test\yishenxiao\bootbase\target\classes\com\mgp\usermanager\dao\UserMapper.xml]'
+2018-05-08 15:40:04.691 INFO [main][Jdk14Logger.java:87] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25641d39: startup date [Tue May 08 15:40:01 CST 2018]; root of context hierarchy
+2018-05-08 15:40:04.770 INFO [main][Jdk14Logger.java:87] - Mapped "{[/user/getUser/{username}],methods=[GET]}" onto public java.util.List<com.mgp.usermanager.bean.User> com.mgp.usermanager.controller.UserController.getUser(java.lang.String)
+2018-05-08 15:40:04.774 INFO [main][Jdk14Logger.java:87] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-08 15:40:04.775 INFO [main][Jdk14Logger.java:87] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-08 15:40:04.812 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:04.812 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:04.862 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:05.217 INFO [main][Jdk14Logger.java:87] - Registering beans for JMX exposure on startup
+2018-05-08 15:40:05.219 INFO [main][Jdk14Logger.java:87] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-08 15:40:05.225 INFO [main][Jdk14Logger.java:87] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-08 15:40:05.242 INFO [main][DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-08 15:40:05.254 INFO [main][DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-08 15:40:05.272 INFO [main][DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2018-05-08 15:40:05.296 INFO [main][Jdk14Logger.java:87] - Tomcat started on port(s): 8080 (http)
+2018-05-08 15:40:05.302 INFO [main][Jdk14Logger.java:87] - Started BaseItem in 5.108 seconds (JVM running for 6.184)
+2018-05-08 15:40:49.603 INFO [main][Jdk14Logger.java:87] - Starting BaseItem on WIN-4NVSM29K976 with PID 2096 (C:\mao\gitversion\git\test\yishenxiao\bootbase\target\classes started by Administrator in C:\mao\gitversion\git\test\yishenxiao\bootbase)
+2018-05-08 15:40:49.611 INFO [main][Jdk14Logger.java:87] - The following profiles are active: dev
+2018-05-08 15:40:49.675 INFO [main][Jdk14Logger.java:87] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25641d39: startup date [Tue May 08 15:40:49 CST 2018]; root of context hierarchy
+2018-05-08 15:40:49.777 DEBUG [background-preinit][LoggerFactory.java:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2018-05-08 15:40:49.777 INFO [background-preinit][Version.java:30] - HV000001: Hibernate Validator 5.3.5.Final
+2018-05-08 15:40:49.804 DEBUG [background-preinit][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:50.909 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:50.933 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:50.940 DEBUG [main][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-05-08 15:40:50.940 DEBUG [main][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-05-08 15:40:50.942 DEBUG [main][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy59
+2018-05-08 15:40:50.944 DEBUG [main][ValidationXmlParser.java:99] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-05-08 15:40:50.946 DEBUG [main][ResourceLoaderHelper.java:47] - Trying to load META-INF/validation.xml via user class loader
+2018-05-08 15:40:50.948 DEBUG [main][ResourceLoaderHelper.java:54] - Trying to load META-INF/validation.xml via TCCL
+2018-05-08 15:40:50.948 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-05-08 15:40:50.948 DEBUG [main][ValidationXmlParser.java:106] - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-05-08 15:40:51.186 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:51.187 DEBUG [main][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2018-05-08 15:40:51.188 DEBUG [main][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2018-05-08 15:40:51.188 DEBUG [main][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2018-05-08 15:40:51.189 DEBUG [main][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy59
+2018-05-08 15:40:51.189 DEBUG [main][ValidationXmlParser.java:99] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2018-05-08 15:40:51.189 DEBUG [main][ResourceLoaderHelper.java:47] - Trying to load META-INF/validation.xml via user class loader
+2018-05-08 15:40:51.190 DEBUG [main][ResourceLoaderHelper.java:54] - Trying to load META-INF/validation.xml via TCCL
+2018-05-08 15:40:51.190 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2018-05-08 15:40:51.191 DEBUG [main][ValidationXmlParser.java:106] - No META-INF/validation.xml found. Using annotation based configuration only.
+2018-05-08 15:40:51.533 INFO [main][Jdk14Logger.java:87] - Tomcat initialized with port(s): 8080 (http)
+2018-05-08 15:40:51.549 INFO [main][DirectJDKLog.java:179] - Starting service [Tomcat]
+2018-05-08 15:40:51.551 INFO [main][DirectJDKLog.java:179] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-05-08 15:40:51.738 INFO [localhost-startStop-1][DirectJDKLog.java:179] - Initializing Spring embedded WebApplicationContext
+2018-05-08 15:40:51.739 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Root WebApplicationContext: initialization completed in 2067 ms
+2018-05-08 15:40:51.938 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-08 15:40:51.949 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-08 15:40:51.950 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-08 15:40:51.950 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-08 15:40:51.951 INFO [localhost-startStop-1][Jdk14Logger.java:87] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-08 15:40:52.245 DEBUG [main][LogFactory.java:135] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-05-08 15:40:52.393 DEBUG [main][SqlSessionFactoryBean.java:496] - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2018-05-08 15:40:52.478 DEBUG [main][SqlSessionFactoryBean.java:528] - Parsed mapper file: 'file [C:\mao\gitversion\git\test\yishenxiao\bootbase\target\classes\com\mgp\usermanager\dao\UserMapper.xml]'
+2018-05-08 15:40:52.921 INFO [main][Jdk14Logger.java:87] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25641d39: startup date [Tue May 08 15:40:49 CST 2018]; root of context hierarchy
+2018-05-08 15:40:52.997 INFO [main][Jdk14Logger.java:87] - Mapped "{[/user/getUser/{username}],methods=[GET]}" onto public java.util.List<com.mgp.usermanager.bean.User> com.mgp.usermanager.controller.UserController.getUser(java.lang.String)
+2018-05-08 15:40:53.002 INFO [main][Jdk14Logger.java:87] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-08 15:40:53.003 INFO [main][Jdk14Logger.java:87] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-08 15:40:53.041 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:53.041 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:53.090 INFO [main][Jdk14Logger.java:87] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-08 15:40:53.392 INFO [main][Jdk14Logger.java:87] - Registering beans for JMX exposure on startup
+2018-05-08 15:40:53.394 INFO [main][Jdk14Logger.java:87] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-08 15:40:53.400 INFO [main][Jdk14Logger.java:87] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-08 15:40:53.417 INFO [main][DirectJDKLog.java:179] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-05-08 15:40:53.429 INFO [main][DirectJDKLog.java:179] - Starting ProtocolHandler ["http-nio-8080"]
+2018-05-08 15:40:53.447 INFO [main][DirectJDKLog.java:179] - Using a shared selector for servlet write/read
+2018-05-08 15:40:53.470 INFO [main][Jdk14Logger.java:87] - Tomcat started on port(s): 8080 (http)
+2018-05-08 15:40:53.477 INFO [main][Jdk14Logger.java:87] - Started BaseItem in 5.22 seconds (JVM running for 6.54)

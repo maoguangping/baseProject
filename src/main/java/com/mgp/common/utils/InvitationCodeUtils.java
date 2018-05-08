@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.util.Random;
 
@@ -31,7 +31,6 @@ public class InvitationCodeUtils {
 
         while((id / binLen) > 0) {
             int ind=(int)(id % binLen);
-            // System.out.println(num + "-->" + ind);
             buf[--charPos]=r[ind];
             id /= binLen;
         }
@@ -69,26 +68,9 @@ public class InvitationCodeUtils {
             } else {
                 res=ind;
             }
-            // System.out.println(ind + "-->" + res);
         }
         return res;
     }
-/*    @Test
-    public void strTest(){
-    	List<String> a1 = new ArrayList<String>();
-    	Set<String> a2 = new HashSet<String>();
-    	for(int i=0;i<300000;i++){
-    	   String str = getCharAndNumr(6);
-    	   System.out.println(str);
-    	   a1.add(str);
-       	   a2.add(str);
-    	}
-    	
-    	
-    	System.out.println("al: "+ a1.size());
-    	System.out.println("a2: "+ a2.size());
-    	
-    }*/
     /**
      * @info 根据位数生成邀请码
      * @author mgp

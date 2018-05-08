@@ -1,4 +1,4 @@
-package com.mgp.common.utils.qcloudsms;
+package com.yishenxiao.commons.utils.qcloudsms;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -10,9 +10,9 @@ import java.util.Random;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.mgp.commons.utils.qcloudsms.SmsMultiSenderResult.Detail;
-import com.mgp.commons.utils.qcloudsms.SmsStatusPullCallbackResult.Callback;
-import com.mgp.commons.utils.qcloudsms.SmsStatusPullReplyResult.Reply;
+import com.yishenxiao.commons.utils.qcloudsms.SmsMultiSenderResult.Detail;
+import com.yishenxiao.commons.utils.qcloudsms.SmsStatusPullCallbackResult.Callback;
+import com.yishenxiao.commons.utils.qcloudsms.SmsStatusPullReplyResult.Reply;
 
 class SmsSenderUtil {
 

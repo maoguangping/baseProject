@@ -1,15 +1,15 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.mgp.commons.beans.TencentSMSBean;
-import com.mgp.commons.utils.qcloudsms.SmsMultiSender;
-import com.mgp.commons.utils.qcloudsms.SmsMultiSenderResult;
-import com.mgp.commons.utils.qcloudsms.SmsSingleSender;
-import com.mgp.commons.utils.qcloudsms.SmsSingleSenderResult;
+import com.yishenxiao.commons.beans.TencentSMSBean;
+import com.yishenxiao.commons.utils.qcloudsms.SmsMultiSender;
+import com.yishenxiao.commons.utils.qcloudsms.SmsMultiSenderResult;
+import com.yishenxiao.commons.utils.qcloudsms.SmsSingleSender;
+import com.yishenxiao.commons.utils.qcloudsms.SmsSingleSenderResult;
 
 public class TencentSMSUtils {
 	
@@ -33,8 +33,6 @@ public class TencentSMSUtils {
 				                                                tencentSMSBean.getExtend(), tencentSMSBean.getExt());
 	   }catch(Exception e){
 		   logger.error("模板单发短信失败！");
-		   System.out.println(e);
-		   System.out.println("模板单发短信失败！");
 	   }
 	   return smsSingleSenderResult;
    }
@@ -50,7 +48,6 @@ public class TencentSMSUtils {
 			                                                tencentSMSBean.getExtend(), tencentSMSBean.getExt());
 	   }catch(Exception e){
 		   logger.error("模板单发短信失败！");
-		   System.out.println("模板单发短信失败！");
 	   }
 	   return smsMultiSenderResult;
    }

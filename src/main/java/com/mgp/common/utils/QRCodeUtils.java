@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -60,10 +60,6 @@ public class QRCodeUtils {
             hints.put(DecodeHintType.CHARACTER_SET, "UTF-8");
             MultiFormatReader formatReader = new MultiFormatReader();
             Result result = formatReader.decode(binaryBitmap, hints);
-
-            System.out.println("result 为：" + result.toString());
-            System.out.println("resultFormat 为：" + result.getBarcodeFormat());
-            System.out.println("resultText 为：" + result.getText());
             //设置返回值
             content = result.getText();
         } catch (Exception e) {
@@ -80,10 +76,8 @@ public class QRCodeUtils {
         try {
             //生成二维码图片，并返回图片路径
             String pathName = generateQRCode("sjdlflajfl324jjfoafj&8@4343", width, height, format, "str");
-            System.out.println("生成二维码的图片路径： " + pathName);
 
             String content = parseQRCode(pathName);
-            System.out.println("解析出二维码的图片的内容为： " + content);
         } catch (Exception e) {
             e.printStackTrace();
         }

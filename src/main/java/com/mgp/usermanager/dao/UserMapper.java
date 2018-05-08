@@ -1,7 +1,10 @@
 package com.mgp.usermanager.dao;
 
-import com.mgp.usermanager.beans.User;
+import com.mgp.usermanager.bean.User;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Map;
 
 @Repository("userDao")
 public interface UserMapper {
@@ -16,4 +19,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+    // 根据username查询数据
+    List<User> queryByUserName(Map<String, Object> map);
 }

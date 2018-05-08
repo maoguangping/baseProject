@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.io.PrintWriter;
 
@@ -36,7 +36,6 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 			if (ex instanceof org.apache.catalina.connector.ClientAbortException) {
 				r = ReturnInfo.error(500, "请不要频繁刷新！");
 			} else if (ex instanceof org.apache.shiro.authz.AuthorizationException) {
-				//r = getCode();
 			} else if (ex instanceof UnauthorizedException) {
 				mv.setViewName("redirect:../login.html");  
 	            return mv;  
@@ -53,7 +52,7 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 				mv.setViewName("redirect:../login.html");  
 				mv.addObject("msg", "没有权限，请联系管理员授权！");
 	            return mv;  
-			} else if (ex instanceof IllegalStateException) {
+			} else if (ex instanceof java.lang.IllegalStateException) {
 				System.out.println("IllegalStateException异常，未知错误！");
 				logger.info(ex.getMessage(), ex);
 			} else if (ex instanceof net.sf.json.JSONException) {
@@ -87,27 +86,4 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 		}
 		return new ModelAndView();
 	}
-	
-/*	public R getCode(){
-		R r=new R();
-		if(ShiroUtils.getSession().getAttribute("code")!=null){
-			if(ShiroUtils.getSession().getAttribute("code").equals("204")){
-				r = R.error(204, "用户已经禁用，请联系管理员！");
-			}else if(ShiroUtils.getSession().getAttribute("code").equals("205")){
-				r = R.error(205, "权限变更，请联系管理员！");
-			}else if(ShiroUtils.getSession().getAttribute("code").equals("207")){
-				r = R.error(207, "您的账号在其他地方登录或您已在切换浏览器登录了新账号，请重新登录或修改密码！");
-			}else if(ShiroUtils.getSession().getAttribute("code").equals("300")){
-				r = R.error(300, "用户已经被删除，请联系管理员！");
-			}else if(ShiroUtils.getSession().getAttribute("code").equals("201")){
-				r = R.error(201, "用户密码被管理员更改，请重新登录！");
-			}else if(ShiroUtils.getSession().getAttribute("code").equals("202")){
-				r = R.error(202, "密码错误太多，已锁定不能登陆！");
-			} 
-		}else{
-			//目前只有权限变更没有处理
-			r = R.error(205, "权限变更，请联系管理员！");
-		}
-		return r;
-	}*/
 }

@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.util.LinkedHashMap;
 
@@ -61,7 +61,7 @@ public class ReturnInfoLine extends LinkedHashMap<String,Object>{
 	}
 	
 	public static ReturnInfoLine error(){
-		return error(500, "服务器未知异常！");
+		return error(500, "加载失败！");
 	}
 	
 	public static ReturnInfoLine error(String msg){

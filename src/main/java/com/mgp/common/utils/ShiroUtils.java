@@ -1,14 +1,14 @@
-package com.mgp.common.utils;
+/*package com.yishenxiao.commons.utils;
 
-import com.mgp.usermanager.beans.User;
+import com.yishenxiao.usermanager.beans.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 
-/**
+*//**
  * @infoShiro工具类
  * @author mgp
- */
+ *//*
 public class ShiroUtils {
 	
 	public static Session getSession() {
@@ -44,3 +44,4 @@ public class ShiroUtils {
 	}
 
 }
+*/

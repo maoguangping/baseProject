@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;

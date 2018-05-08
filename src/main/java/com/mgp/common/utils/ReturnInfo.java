@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.util.HashMap;
 
@@ -15,6 +15,7 @@ public class ReturnInfo extends HashMap<String,Object>{
 	public Object data;
 	public Object msg;
 	public int dataSize;
+	public boolean databoolean;
 	
 	public ReturnInfo(){
 		this.put("code", 200);
@@ -40,19 +41,33 @@ public class ReturnInfo extends HashMap<String,Object>{
 		info.put("msg", msg);
 		return info;
 	}
+    
+    public static ReturnInfo info(int code, Object data, boolean databoolean){
+    	ReturnInfo info = new ReturnInfo();
+    	info.put("code", code);
+    	info.put("data", data);
+    	info.put("databoolean", databoolean);
+		return info;
+	}
 	
     public static ReturnInfo ok(){
 		return new ReturnInfo();
 	}
     
-	public static ReturnInfo ok(String msg){
+	@Override
+	public String toString() {
+		return "ReturnInfo [code=" + code + ", data=" + data + ", msg=" + msg + ", dataSize=" + dataSize
+				+ ", databoolean=" + databoolean + "]";
+	}
+
+	public static ReturnInfo ok(Object msg){
 		ReturnInfo info = new ReturnInfo();
 	    info.put("data", msg);
 		return info;
 	}
 	
 	public static ReturnInfo error(){
-		return error(500, "服务器未知异常！");
+		return error(500, "加载失败！");
 	}
 	
 	public static ReturnInfo error(String msg){

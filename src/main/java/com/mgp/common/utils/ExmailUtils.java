@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.security.GeneralSecurityException;
 import java.util.Properties;
@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sun.mail.util.MailSSLSocketFactory;
-import com.mgp.commons.beans.EmailBean;
+import com.yishenxiao.commons.beans.EmailBean;
 
 public class ExmailUtils {
 	

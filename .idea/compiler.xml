@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bootbase" target="1.8" />
+      <module name="springbootbase" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.security.MessageDigest;
 
@@ -68,8 +68,4 @@ public class MD5Utils {
         int d2 = n % 16;  
         return hexDigits[d1] + hexDigits[d2];  
     }  
-	
-	/*public static void main(String[] args) {
-		System.out.println(MD5Utils.getMd5("G09a2sddddddddddddddddddddddddddddddddddddddddddddddffffffffffffffffffffffffffffdfeffffffffffffffffffffffffffffffq").length());		
-	}*/
 }

@@ -11,4 +11,5 @@ public class BaseItem {
     public static void main(String[] args) {
         SpringApplication.run(BaseItem.class, args);
     }
+
 }

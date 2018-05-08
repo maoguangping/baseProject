@@ -1,4 +1,4 @@
-package com.mgp.common.utils.qcloudsms;
+package com.yishenxiao.commons.utils.qcloudsms;
 
 public class SmsVoicePromptSenderResult {
 

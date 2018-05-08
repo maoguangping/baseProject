@@ -1,4 +1,4 @@
-package com.mgp.common.utils;
+package com.yishenxiao.commons.utils;
 
 import java.util.Properties;
 
@@ -10,7 +10,7 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.mgp.commons.beans.SMSBean;
+import com.yishenxiao.commons.beans.SMSBean;
   
 public class SMSUtils{
 	
@@ -43,7 +43,6 @@ public class SMSUtils{
 			    }
 		    }catch(Exception e){
 		    	logger.error("短信发送失败！");
-		    	e.printStackTrace();
 		    }finally{
 		       post.releaseConnection(); 
 		    }

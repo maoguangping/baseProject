@@ -15,7 +15,57 @@
     </parent>
 
     <properties>
+        <!-- mybatis jar -->
         <mybatis.version>1.1.1</mybatis.version>
+        <!-- alibaba data source 相关jar包-->
+        <druid.version>1.0.15</druid.version>
+        <!-- alibaba fastjson 格式化对 -->
+        <alibaba.fastjson.version>1.1.41</alibaba.fastjson.version>
+        <!-- google验证码插件 -->
+        <kaptcha.version>2.3.2</kaptcha.version>
+        <!-- log4j2 -->
+        <log4j2.version>2.0.1.RELEASE</log4j2.version>
+        <commons.log.version>1.2</commons.log.version>
+        <!-- shiro -->
+        <shiro.version>1.2.2</shiro.version>
+        <!-- velocity视图解析依赖 -->
+        <velocity.version>1.7</velocity.version>
+        <velocity.tools.version>2.0</velocity.tools.version>
+        <!-- 用于支持页面聊天 -->
+        <javaee.api.version>7.0</javaee.api.version>
+        <javax.websocket.api.version>1.1</javax.websocket.api.version>
+        <!-- to json -->
+       <!-- <jackson.version>1.9.11</jackson.version>
+        <ezmorph.version>1.0.6</ezmorph.version>
+        <json.version>20090211</json.version>
+        <json.lib.version>2.2.1</json.lib.version>-->
+        <!-- springmvc file upload -->
+        <commons.fileupload.version>1.3.1</commons.fileupload.version>
+        <commons.io.version>2.4</commons.io.version>
+        <jackson.core.data.version>2.5.2</jackson.core.data.version>
+        <!-- mail jar-->
+        <javax.mail.version>1.5.0-b01</javax.mail.version>
+        <!-- SMS国内 jar-->
+        <commons.httpclient.version>3.1</commons.httpclient.version>
+        <!-- SMS jar-->
+        <httpcomponents.httpclient.version>4.5.3</httpcomponents.httpclient.version>
+        <httpcomponents.httpcore.version>4.4.7</httpcomponents.httpcore.version>
+        <httpcomponents.httpmime.version>4.5.3</httpcomponents.httpmime.version>
+        <!-- 环信 jar-->
+        <logback.classic.version>1.2.1</logback.classic.version>
+        <rest.java.sdk.version>1.0.2</rest.java.sdk.version>
+        <!-- okhttp jar -->
+        <com.squareup.okhttp3.version>3.9.1</com.squareup.okhttp3.version>
+        <com.squareup.retrofit2.version>2.1.0</com.squareup.retrofit2.version>
+        <com.retrofit.version>2.1.0</com.retrofit.version>
+        <!-- javalocal jave -->
+        <javalocal.jave.version>1.0</javalocal.jave.version>
+        <org.bytedeco.javacv.version>0.8</org.bytedeco.javacv.version>
+        <org.jsoup.jsoup.version>1.11.2</org.jsoup.jsoup.version>
+        <!-- 中英文排序 -->
+        <pinyin4j.version>2.5.0</pinyin4j.version>
+        <!-- 设置项目编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -23,6 +73,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion><!-- 去除默认配置 -->
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,6 +95,275 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- alibaba data source 相关jar包-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <!-- alibaba fastjson 格式化对 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${alibaba.fastjson.version}</version>
+        </dependency>
+        <!-- google验证码插件 -->
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+            <version>${kaptcha.version}</version>
+        </dependency>
+        <!-- log4j -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <!-- 支持识别yml配置，log4j配置可在yml文件里面配置 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>${commons.log.version}</version>
+        </dependency>
+        <!-- springboot redis配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- springboot mongo配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <!-- 集成shiro -->
+        <!--<dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+            <version>1.2.2</version>
+        </dependency>-->
+        <!-- 视图解析依赖 -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-tools</artifactId>
+            <version>${velocity.tools.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dom4j</artifactId>
+                    <groupId>dom4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>oro</artifactId>
+                    <groupId>oro</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>sslext</artifactId>
+                    <groupId>sslext</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>struts-core</artifactId>
+                    <groupId>org.apache.struts</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>struts-taglib</artifactId>
+                    <groupId>org.apache.struts</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>struts-tiles</artifactId>
+                    <groupId>org.apache.struts</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-validator</artifactId>
+                    <groupId>commons-validator</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-beanutils</artifactId>
+                    <groupId>commons-beanutils</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-chain</artifactId>
+                    <groupId>commons-chain</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-collections</artifactId>
+                    <groupId>commons-collections</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-digester</artifactId>
+                    <groupId>commons-digester</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- 用于支持页面聊天 -->
+        <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <version>${javax.websocket.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee.api.version}</version>
+        </dependency>
+        <!-- 用于发送邮件 -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${javax.mail.version}</version>
+        </dependency>
+        <!-- 用于发送国内短信 -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>${commons.httpclient.version}</version>
+        </dependency>
+        <!-- 用于发送短信 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpcomponents.httpclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>${httpcomponents.httpcore.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${httpcomponents.httpmime.version}</version>
+        </dependency>
+        <!-- 环信jar -->
+        <!-- <dependency>
+             <groupId>ch.qos.logback</groupId>
+             <artifactId>logback-classic</artifactId>
+             <version>${logback.classic.version}</version>
+        </dependency> -->
+        <dependency>
+            <groupId>com.easemob</groupId>
+            <artifactId>rest-java-sdk</artifactId>
+            <version>${rest.java.sdk.version}</version>
+        </dependency>
+        <!-- springboot fileupload -->
+        <!-- 添加thymeleaf，支持页面跳转，例子：https://blog.csdn.net/change_on/article/details/59529034 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons.fileupload.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.core.data.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.core.data.version}</version>
+        </dependency>
+        <!-- okhttp jar -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${com.squareup.okhttp3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>${com.squareup.retrofit2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-gson</artifactId>
+            <version>${com.retrofit.version}</version>
+        </dependency>
+        <!-- <dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>jave</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/jar/jave-1.0.2.jar</systemPath>
+        </dependency> -->
+        <dependency>
+            <groupId>javalocal</groupId>
+            <artifactId>jave</artifactId>
+            <version>${javalocal.jave.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>${org.bytedeco.javacv.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${org.jsoup.jsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>${pinyin4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org</groupId>
+            <artifactId>jaudiotagger</artifactId>
+            <version>2.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <!-- 二维码 -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15</artifactId>
+            <version>1.45</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>libphonenumber</artifactId>
+            <version>8.8.10</version>
+        </dependency>
+        <!-- 分布式redis锁 -->
+        <!--<dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>2.11.0</version>
+        </dependency>-->
     </dependencies>
     <build>
         <resources>
@@ -47,6 +372,7 @@
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
+                    <include>**/*.yml</include>
                 </includes>
                 <filtering>true</filtering>
             </resource>
@@ -68,7 +394,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <maimClass>com.mgp.start.SpringBootStart</maimClass>
+                    <maimClass>com.mgp.BaseItem</maimClass>
                 </configuration>
                 <executions>
                     <execution>

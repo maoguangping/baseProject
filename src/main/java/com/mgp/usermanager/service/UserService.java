@@ -1,9 +1,9 @@
 package com.mgp.usermanager.service;
 
-import org.springframework.stereotype.Service;
+import com.mgp.usermanager.bean.User;
 
+import java.util.List;
 
 public interface UserService {
-
-    public int deleteById(Long id);
+    public List<User> getListUser(String username);
 }
